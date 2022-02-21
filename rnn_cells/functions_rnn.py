@@ -1,9 +1,9 @@
 import torch
 import torch.nn.functional as F
 from .basic_rnn_cells import BasicLSTMCell
-from torch.nn._functions.rnn import LSTMCell, GRUCell
-from torch.nn._functions.rnn import Recurrent
-from torch.nn._functions.rnn import variable_recurrent_factory
+from torch.nn.RNN import LSTMCell, GRUCell
+from torch.nn.RNN import Recurrent
+from torch.nn.RNN import variable_recurrent_factory
 
 def custom_StackedRNN(inners, num_layers, lstm=False, dropout=0, train=True):
 
